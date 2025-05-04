@@ -21,9 +21,10 @@ nav a {
 }
 
 .hero {
-  padding: 40px;
+  height: 250px; /* Set height to 250px */
+  padding: 10px; /* Reduce padding to 10px */
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #d3d3d3; /* Light gray background color */
 }
 
 .products {
