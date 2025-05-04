@@ -63,14 +63,15 @@ nav a {
 
 .product-card button {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #90ee90;
   color: black;
-  padding: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
   border: none;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .product-card .btn {
