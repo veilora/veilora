@@ -21,7 +21,7 @@ nav a {
 }
 
 .hero {
-  height: 100px; /* Reduce height to 100px */
+  height: 50px; /* Reduce height to 50px */
   padding: 0;    /* Remove padding */
   margin: 0;     /* Remove margins */
   text-align: center;
@@ -34,7 +34,8 @@ nav a {
 .hero h2, .hero p {
   margin: 0; /* Remove margins around text */
   padding: 0; /* Remove padding around text */
-  line-height: 1.2; /* Reduce line height for smaller space between lines */
+  line-height: 1; /* Set line height to 1 for minimal vertical spacing */
+  font-size: 14px; /* Reduce font size to avoid taking too much vertical space */
 }
 
 .products {
