@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: #a77979;
-  padding: 10px 20px;  /* Reduce the padding to 10px vertically and 20px horizontally */
+  padding: 10px 20px;
   text-align: center;
   color: white;
 }
@@ -21,21 +21,21 @@ nav a {
 }
 
 .hero {
-  height: 50px; /* Reduce height to 50px */
-  padding: 0;    /* Remove padding */
-  margin: 0;     /* Remove margins */
+  height: 50px;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  background-color: #d3d3d3; /* Light gray background */
+  background-color: #d3d3d3;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content vertically and horizontally */
+  align-items: center;
 }
 
 .hero h2, .hero p {
-  margin: 0; /* Remove margins around text */
-  padding: 0; /* Remove padding around text */
-  line-height: 1; /* Set line height to 1 for minimal vertical spacing */
-  font-size: 14px; /* Reduce font size to avoid taking too much vertical space */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 14px;
 }
 
 .products {
@@ -81,6 +81,20 @@ nav a {
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* تنسيق أيقونة Instagram */
+.instagram-icon {
+  display: inline-block;
+  font-size: 22px;
+  color: #E1306C;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.instagram-icon:hover {
+  color: #c13584;
 }
 
 .about, .contact {
