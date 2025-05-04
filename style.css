@@ -8,8 +8,8 @@ body {
 }
 
 header {
-  background-color: #222;
-  padding: 20px;
+  background-color: #a77979;
+  padding: 10px 20px;  /* Reduce the padding to 10px vertically and 20px horizontally */
   text-align: center;
   color: white;
 }
