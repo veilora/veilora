@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #90ee90;
+  color: black;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #a77979;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about, .contact {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
