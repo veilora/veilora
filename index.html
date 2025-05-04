@@ -5,21 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veilora - Elegant Women's Shawls</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    // Function to show the order form
-    function showOrderForm(productName) {
-      var orderForm = document.getElementById('orderForm');
-      var productTitle = document.getElementById('productTitle');
-      productTitle.innerHTML = productName;
-      orderForm.style.display = 'block';
-    }
-
-    // Function to hide the order form
-    function hideOrderForm() {
-      var orderForm = document.getElementById('orderForm');
-      orderForm.style.display = 'none';
-    }
-  </script>
 </head>
 <body>
 
@@ -45,7 +30,8 @@
       <img src="product1.jpg" alt="Blue Shawl" />
       <h3>Blue Shawl</h3>
       <p>120 MAD</p>
-      <button class="btn" onclick="showOrderForm('Blue Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Blue Shawl', 120)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Blue%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
@@ -54,7 +40,8 @@
       <img src="product2.jpg" alt="Red Shawl" />
       <h3>Red Shawl</h3>
       <p>150 MAD</p>
-      <button class="btn" onclick="showOrderForm('Red Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Red Shawl', 150)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Red%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
@@ -63,7 +50,8 @@
       <img src="product3.jpg" alt="Green Shawl" />
       <h3>Green Shawl</h3>
       <p>130 MAD</p>
-      <button class="btn" onclick="showOrderForm('Green Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Green Shawl', 130)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Green%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
@@ -72,7 +60,8 @@
       <img src="product4.jpg" alt="Pink Shawl" />
       <h3>Pink Shawl</h3>
       <p>110 MAD</p>
-      <button class="btn" onclick="showOrderForm('Pink Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Pink Shawl', 110)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Pink%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
@@ -81,7 +70,8 @@
       <img src="product5.jpg" alt="Brown Shawl" />
       <h3>Brown Shawl</h3>
       <p>140 MAD</p>
-      <button class="btn" onclick="showOrderForm('Brown Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Brown Shawl', 140)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Brown%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
@@ -90,11 +80,25 @@
       <img src="product6.jpg" alt="Gray Shawl" />
       <h3>Gray Shawl</h3>
       <p>125 MAD</p>
-      <button class="btn" onclick="showOrderForm('Gray Shawl')">Add to Cart</button>
+      <button class="add-to-cart-btn" onclick="showOrderForm('Gray Shawl', 125)">Add to Cart</button>
+      <a href="https://wa.me/212XXXXXXXXX" class="btn">Order Now via WhatsApp</a>
       <a href="https://www.instagram.com/veilora.scarves?igsh=eWoxeXdkamg1a2F0&utm_source=qr&text=I%20want%20the%20Gray%20Shawl%20from%20Veilora" class="btn">Send via Instagram</a>
     </div>
 
   </section>
+
+  <!-- Order Form Modal -->
+  <div id="orderFormModal" class="order-form">
+    <h2>Order Your Shawl</h2>
+    <label for="customerName">Enter Your Name:</label>
+    <input type="text" id="customerName" placeholder="Your Name" required />
+    <label for="customerPhone">Enter Your Phone Number:</label>
+    <input type="text" id="customerPhone" placeholder="Your Phone Number" required />
+    <label for="customerShawl">Selected Shawl:</label>
+    <input type="text" id="customerShawl" disabled />
+    <button onclick="submitOrder()">Submit Order</button>
+    <button onclick="closeOrderForm()">Cancel</button>
+  </div>
 
   <section id="about" class="about">
     <h2>About Veilora</h2>
@@ -113,26 +117,27 @@
     <p>All rights reserved © Veilora 2025</p>
   </footer>
 
-  <!-- Order Form (Hidden by Default) -->
-  <div id="orderForm" style="display:none;">
-    <h2>Order Your Shawl</h2>
-    <p id="productTitle"></p>
-    <label for="customerName">Your Name:</label>
-    <input type="text" id="customerName" placeholder="Enter your name" />
-    <button onclick="submitOrder()">Submit Order</button>
-    <button onclick="hideOrderForm()">Cancel</button>
-  </div>
-
   <script>
+    function showOrderForm(shawlName, price) {
+      document.getElementById('customerShawl').value = shawlName + " - " + price + " MAD";
+      document.getElementById('orderFormModal').style.display = 'block';
+    }
+
+    function closeOrderForm() {
+      document.getElementById('orderFormModal').style.display = 'none';
+    }
+
     function submitOrder() {
-      var customerName = document.getElementById('customerName').value;
-      if (customerName.trim() !== "") {
-        alert("Order for " + customerName + " has been successfully placed.");
-        hideOrderForm();
+      const name = document.getElementById('customerName').value;
+      const phone = document.getElementById('customerPhone').value;
+      if (name && phone) {
+        alert('Order for ' + name + ' has been submitted!');
+        closeOrderForm();
       } else {
-        alert("Please enter your name.");
+        alert('Please fill in your name and phone number.');
       }
     }
   </script>
+
 </body>
 </html>
