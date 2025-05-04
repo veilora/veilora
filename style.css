@@ -21,10 +21,20 @@ nav a {
 }
 
 .hero {
-  height: 150px; /* Reduce the height to 150px */
-  padding: 5px;  /* Reduce the padding to 5px */
+  height: 100px; /* Reduce height to 100px */
+  padding: 0;    /* Remove padding */
+  margin: 0;     /* Remove margins */
   text-align: center;
-  background-color: #d3d3d3; /* Light gray background color */
+  background-color: #d3d3d3; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically and horizontally */
+}
+
+.hero h2, .hero p {
+  margin: 0; /* Remove margins around text */
+  padding: 0; /* Remove padding around text */
+  line-height: 1.2; /* Reduce line height for smaller space between lines */
 }
 
 .products {
