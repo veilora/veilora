@@ -53,6 +53,7 @@ nav a {
   width: 250px;
   text-align: center;
   background-color: #fff;
+  position: relative;
 }
 
 .product-card img {
@@ -84,7 +85,6 @@ nav a {
   border-radius: 5px;
 }
 
-/* تنسيق أيقونة Instagram */
 .instagram-icon {
   display: inline-block;
   font-size: 28px;
@@ -110,6 +110,7 @@ footer {
   color: white;
 }
 
+/* Order Modal */
 .modal {
   display: none;
   position: fixed;
@@ -132,4 +133,27 @@ footer {
   float: right;
   font-size: 20px;
   cursor: pointer;
+}
+
+/* Swiper Carousel */
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a77979;
+  top: 40%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #6d4c4c;
 }
