@@ -8,17 +8,6 @@ function closeOrderForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Initialize Swiper
-  const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
   document.getElementById('orderForm').addEventListener('submit', function (e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
