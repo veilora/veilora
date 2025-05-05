@@ -8,13 +8,24 @@ function closeOrderForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   document.getElementById('orderForm').addEventListener('submit', function (e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
     const product = document.getElementById('product').value;
-    const message = `Hello, I want to order the ${product}. My name is ${name}.`;
+    const message = Hello, I want to order the ${product}. My name is ${name}.;
     const whatsappNumber = '+212772353917';
-    const url = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
+    const url = https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)};
     window.open(url, '_blank');
     closeOrderForm();
   });
