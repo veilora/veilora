@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veilora - Elegant Women's Shawls</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Veilora</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover Your Elegance with Veilora</h2>
+    <p>A unique collection of elegant women's shawls</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+
+    <div class="product-card">
+      <img src="https://github.com/veilora/veilora/blob/main/test-shawl-image.jpg?raw=true" alt="black Shawl Image" />
+      <h3>black Shawl</h3>
+      <p>123 MAD</p>
+      <button onclick="openOrderForm('black Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/veilora/veilora/f4ef79c005a462ca2db1b6074e84f0455ed52b8a/Gray%20shawl.jpg" alt="Gray Shawl" />
+      <h3>Gray Shawl</h3>
+      <p>125 MAD</p>
+      <button onclick="openOrderForm('Gray Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/veilora/veilora/cf4ffcfefac40dec7ce3ea2ec05beaa3ce0c1542/pink%20shawl.jpg" alt="Pink Shawl" />
+      <h3>Pink Shawl</h3>
+      <p>110 MAD</p>
+      <button onclick="openOrderForm('Pink Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/veilora/veilora/9412da8f8ad2f9d99a3791d9bd02f1470fb14d1b/green%20shawl.jpg" alt="Green Shawl" />
+      <h3>Green Shawl</h3>
+      <p>130 MAD</p>
+      <button onclick="openOrderForm('Green Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/veilora/veilora/8fddb55f62d303caf132226d36ba8a2382f3b5d0/brown%20shawl.jpg" alt="Brown Shawl" />
+      <h3>Brown Shawl</h3>
+      <p>140 MAD</p>
+      <button onclick="openOrderForm('Brown Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://github.com/veilora/veilora/blob/main/red%20shawl.jpg?raw=true" alt="Red Shawl" />
+      <h3>Red Shawl</h3>
+      <p>150 MAD</p>
+      <button onclick="openOrderForm('Red Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Veilora</h2>
+    <p>Veilora is a Moroccan store offering elegant women's shawls that combine quality and elegance. Delivery available all over Morocco. Pay on delivery.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Instagram: <a href="https://www.instagram.com/veilora.scarves">Follow Us</a></p>
+  </section>
+
+  <footer>
+    <p>All rights reserved © Veilora 2025</p>
+  </footer>
+
+  <div id="order-form" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeOrderForm()">&times;</span>
+      <h2>Complete Your Order</h2>
+      <form id="orderForm">
+        <input type="hidden" id="product" name="product" />
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required />
+        <button type="submit">Send via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
