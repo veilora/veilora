@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veilora - Elegant Women's Shawls</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -26,20 +25,71 @@
   <section id="products" class="products">
     <h2>Our Products</h2>
 
-    <!-- Product Card -->
+    <!-- Product 1 -->
     <div class="product-card">
       <img src="product1.jpg" alt="Blue Shawl" />
       <h3>Blue Shawl</h3>
       <p>120 MAD</p>
-      <button onclick="openOrderForm('Blue Shawl')">Add to Cart</button>
-      <a href="https://www.instagram.com/veilora.scarves" target="_blank" class="instagram-icon">
-        <i class="fab fa-instagram"></i>
-      </a>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Blue Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
     </div>
 
-    <!-- Repeat same structure for other products -->
-    <!-- Add your 5 other product cards here as needed -->
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="product2.jpg" alt="Red Shawl" />
+      <h3>Red Shawl</h3>
+      <p>150 MAD</p>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Red Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
+    </div>
 
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="product3.jpg" alt="Green Shawl" />
+      <h3>Green Shawl</h3>
+      <p>130 MAD</p>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Green Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="product4.jpg" alt="Pink Shawl" />
+      <h3>Pink Shawl</h3>
+      <p>110 MAD</p>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Pink Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="product5.jpg" alt="Brown Shawl" />
+      <h3>Brown Shawl</h3>
+      <p>140 MAD</p>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Brown Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="product6.jpg" alt="Gray Shawl" />
+      <h3>Gray Shawl</h3>
+      <p>125 MAD</p>
+      <div class="product-buttons">
+        <button onclick="openOrderForm('Gray Shawl')">Add to Cart</button>
+        <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+      </div>
+    </div>
   </section>
 
   <section id="about" class="about">
@@ -65,7 +115,7 @@
         <input type="hidden" id="product" name="product" />
         <label for="name">Your Name:</label>
         <input type="text" id="name" required />
-        <button type="submit" class="whatsapp-button">Send via WhatsApp</button>
+        <button type="submit">Send via WhatsApp</button>
       </form>
     </div>
   </div>
