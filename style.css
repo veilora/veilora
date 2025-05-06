@@ -48,51 +48,8 @@ nav a {
   border-radius: 8px;
 }
 
-.product-card button, .product-card .btn {
-  display: inline-block;
-  margin-top: 10px;
+.product-card button {
   background-color: #a77979;
   color: white;
   padding: 10px;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.about, .contact {
-  padding: 20px;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #a77979;
-  color: white;
-}
-
-/* Modal form */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 20px;
-  width: 300px;
-  border-radius: 8px;
-}
-
-.close {
-  float: right;
-  font-size: 20px;
-  cursor: pointer;
-}
+  border
