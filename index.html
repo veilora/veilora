@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -6,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veilora - Elegant Women's Shawls</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -27,24 +25,59 @@
   <section id="products" class="products">
     <h2>Our Products</h2>
 
+    <!-- Repeat this block for each product -->
     <div class="product-card">
-      <img src="https://github.com/veilora/veilora/blob/main/test-shawl-image.jpg?raw=true" alt="black Shawl Image" />
-      <h3>Black Shawl</h3>
-      <p>123 MAD</p>
-      <button onclick="openOrderForm('Black Shawl')">Add to Cart</button>
+      <img src="product1.jpg" alt="Blue Shawl" />
+      <h3>Blue Shawl</h3>
+      <p>120 MAD</p>
+      <button onclick="openOrderForm('Blue Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
     </div>
 
     <div class="product-card">
-      <img src="https://raw.githubusercontent.com/veilora/veilora/8fddb55f62d303caf132226d36ba8a2382f3b5d0/brown%20shawl.jpg" alt="Brown Shawl" />
+      <img src="product2.jpg" alt="Red Shawl" />
+      <h3>Red Shawl</h3>
+      <p>150 MAD</p>
+      <button onclick="openOrderForm('Red Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+    </div>
+
+    <div class="product-card">
+      <img src="product3.jpg" alt="Green Shawl" />
+      <h3>Green Shawl</h3>
+      <p>130 MAD</p>
+      <button onclick="openOrderForm('Green Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+    </div>
+
+    <div class="product-card">
+      <img src="product4.jpg" alt="Pink Shawl" />
+      <h3>Pink Shawl</h3>
+      <p>110 MAD</p>
+      <button onclick="openOrderForm('Pink Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+    </div>
+
+    <div class="product-card">
+      <img src="product5.jpg" alt="Brown Shawl" />
       <h3>Brown Shawl</h3>
       <p>140 MAD</p>
       <button onclick="openOrderForm('Brown Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
+    </div>
+
+    <div class="product-card">
+      <img src="product6.jpg" alt="Gray Shawl" />
+      <h3>Gray Shawl</h3>
+      <p>125 MAD</p>
+      <button onclick="openOrderForm('Gray Shawl')">Add to Cart</button>
+      <a href="https://www.instagram.com/veilora.scarves" class="btn">Instagram</a>
     </div>
   </section>
 
   <section id="about" class="about">
     <h2>About Veilora</h2>
-    <p>Veilora is a Moroccan store offering elegant women's shawls. Delivery available all over Morocco. Pay on delivery.</p>
+    <p>Veilora is a Moroccan store offering elegant women's shawls that combine quality and elegance. Delivery available all over Morocco. Pay on delivery.</p>
   </section>
 
   <section id="contact" class="contact">
@@ -53,9 +86,10 @@
   </section>
 
   <footer>
-    <p>All rights reserved ©️ Veilora 2025</p>
+    <p>All rights reserved © Veilora 2025</p>
   </footer>
 
+  <!-- Order Form Modal -->
   <div id="order-form" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeOrderForm()">&times;</span>
