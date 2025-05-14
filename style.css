@@ -66,7 +66,7 @@ nav a {
   margin-top: 10px;
   background-color: #90ee90;
   color: black;
-  padding: 10px;
+  padding: 14px;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -86,7 +86,7 @@ nav a {
 /* تنسيق أيقونة Instagram */
 .instagram-icon {
   display: inline-block;
-  font-size: 22px;
+  font-size: 28px;
   color: #E1306C;
   text-decoration: none;
   margin-left: 10px;
